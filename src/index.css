@@ -87,7 +87,7 @@ a {
 }
 
 .cta-input-wrapper {
-    display: flex;
+  display: flex;
   gap: var(--spacing-small);
 }
 
@@ -99,8 +99,8 @@ a {
 }
 
 .cta-input::placeholder {
-    color: var(--color-secondary);
-    opacity: 0.6;
+  color: var(--color-secondary);
+  opacity: 0.6;
 }
 
 .cta-error {
@@ -110,6 +110,7 @@ a {
 }
 
 /* BOOSTER AND FOOTER STLYES */
+
 .boost-container {
   background-image: url("./assets/images/bg-boost-desktop.svg");
   background-color: var(--color-primary);
@@ -119,16 +120,18 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height:30vh;
+  height: 30vh;
   width: 100vw;
   color: var(--color-white);
   font-size: var(--font-size-large);
 }
+
 footer {
-  position:fixed;
+  position: fixed;
   bottom: 0;
   width: 100vw;
 }
+
 .footer-container {
   display: flex;
   flex-direction: row;
@@ -138,60 +141,72 @@ footer {
   color: var(--color-white);
   font-size: var(--font-size-small);
 }
+
 .footer-container .img-container {
   width: 30vw;
 }
+
 .footer-container .img-container img {
   padding-left: 10px;
 }
+
 .footer-container .middle-links {
   display: flex;
   width: 50vw;
-
 }
+
 .footer-container ul {
   width: 40vw;
 }
+
 .footer-container li:hover {
   cursor: pointer;
   color: var(--color-accent-hover);
   transition: var(--transition);
 }
+
 .footer-container .middle-links li:nth-child(1) {
   font-weight: var(--font-weight-bold);
 }
-.footer-container .icons  img {
+
+.footer-container .icons img {
   padding-left: var(--spacing-large);
 }
+
 .footer-container .icons img:hover {
   cursor: pointer;
 }
+
 @media (max-width: 375px) {
   .footer-container {
     display: flex;
     flex-direction: column;
     height: 100vh;
-
   }
-  .footer-container .img-container img {
-  padding: 20px 0px;
-}
-.footer-container .middle-links {
-  display: flex;
-  flex-direction: column;
-  width: 100vw;
-  height: 80vh;
-}
-.footer-container .middle-links ul {
-  flex-direction: column;
-  justify-self: center;
-  align-self: center;
-}
-.footer-container li {
-  align-self: center;
-  justify-self: center;
-  padding-bottom: 20px;
-}
-  
-@media (max-width: 1440px){}
 
+  .footer-container .img-container img {
+    padding: 20px 0px;
+  }
+
+  .footer-container .middle-links {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 80vh;
+  }
+
+  .footer-container .middle-links ul {
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .footer-container li {
+    align-self: center;
+    justify-self: center;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 1440px) {
+}
