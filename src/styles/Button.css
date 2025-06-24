@@ -1,19 +1,18 @@
 .button {
   padding: var(--spacing-small) var(--spacing-large);
-  font-size: var(--font-size-base);
+  font-size: var(--font-size-small);
   font-family: var(--font-family);
   border: none;
   border-radius: var(--border-radius);
   cursor: pointer;
   font-weight: var(--font-weight-bold);
   background-color: var(--color-accent);
-  color: var(--color-text);
+  color: var(--color-white);
   transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
 .button.primary:hover {
   background-color: var(--color-accent-hover);
-  color: var(--color-white);
 }
 
 .button.secondary {
@@ -22,20 +21,14 @@
 
 .button.secondary:hover {
   background-color: var(--color-accent-hover);
-  color: var(--color-white);
 }
 
 .button.disabled {
   background-color: var(--color-primary);
-  color: var(--color-white);
   cursor: not-allowed;
 }
 
 .button.small {
   padding: var(--spacing-small) var(--spacing-large);
   font-size: var(--font-size-xsmall);
-}
-
-.button:not(.disabled):hover {
-  transform: scale(1.02);
 }
