@@ -28,6 +28,10 @@
   cursor: not-allowed;
 }
 
+.button.disabled:hover {
+  background-color: var(--color-primary);
+}
+
 .button.small {
   padding: var(--spacing-small) var(--spacing-large);
   font-size: var(--font-size-xsmall);

@@ -25,6 +25,7 @@
   --spacing-medium: 16px;
   --spacing-large: 24px;
   --spacing-xlarge: 32px;
+  --spacing-xxlarge: 48px;
 
   --border-radius: 8px;
   --border-radius-rounded: 50px;
@@ -65,4 +66,45 @@ a {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 var(--spacing-medium);
+}
+
+/* CALL-TO-ACTION SECTION */
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-medium);
+}
+
+.cta-input-container {
+  background-color: var(--color-primary);
+  background-image: url("src/assets/images/bg-shorten-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: var(--spacing-xlarge) var(--spacing-xxlarge);
+  border-radius: var(--border-radius);
+}
+
+.cta-input-wrapper {
+    display: flex;
+  gap: var(--spacing-small);
+}
+
+.cta-input {
+  flex: 1;
+  padding: var(--spacing-small) var(--spacing-medium);
+  border: 2px solid var(--color-secondary);
+  border-radius: var(--border-radius);
+}
+
+.cta-input::placeholder {
+    color: var(--color-secondary);
+    opacity: 0.6;
+}
+
+.cta-error {
+  color: var(--color-secondary);
+  font-size: var(--font-size-xsmall);
+  margin-top: var(--spacing-small);
 }

@@ -1,0 +1,30 @@
+.cta-links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-small);
+  font-size: var(--font-size-small);
+}
+
+.cta-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-small) var(--spacing-medium);
+  background-color: var(--color-white);
+  border-radius: var(--border-radius);
+}
+
+.cta-link div {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-medium);
+}
+
+.cta-link a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.cta-link a:hover {
+  text-decoration: underline;
+}
