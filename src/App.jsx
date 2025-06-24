@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import CallToAction from "./ui/CallToAction";
 import ShortenProvider from "./contexts/ShortenContext";
 
@@ -8,6 +9,7 @@ function App() {
       <ShortenProvider>
         <CallToAction />
       </ShortenProvider>
+      <Footer/>
     </>
   );
 }
