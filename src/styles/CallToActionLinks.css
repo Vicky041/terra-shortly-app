@@ -28,3 +28,24 @@
 .cta-link a:hover {
   text-decoration: underline;
 }
+
+@media screen and (max-width: 768px) {
+  .cta-link {
+    display: block;
+  }
+
+  .cta-link p {
+    padding-block: var(--spacing-small);
+    border-bottom: 1px solid var(--color-background-secondary);
+  }
+
+  .cta-link div {
+    display: block;
+    margin-top: var(--spacing-small);
+  }
+
+  .cta-link .button {
+    width: 100%;
+    margin-top: var(--spacing-small);
+  }
+}

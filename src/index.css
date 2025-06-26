@@ -88,18 +88,43 @@ a {
 
 .cta-input-wrapper {
   display: flex;
+  align-items: start;
   gap: var(--spacing-small);
 }
 
-.cta-input {
+.cta-input-wrapper div {
   flex: 1;
+}
+
+
+@media screen and (max-width: 768px) {
+  .cta-input-container {
+    padding: var(--spacing-large);
+  }
+
+  .cta-input-wrapper {
+    display: block;
+  }
+
+  .cta-input-wrapper div {
+    margin-bottom: var(--spacing-small);
+  }
+
+  .cta-input-wrapper .button {
+    width: 100%;
+    margin-top: var(--spacing-small);
+  }
+}
+
+.cta-input {
+  width: 100%;
   padding: var(--spacing-small) var(--spacing-medium);
-  border: 2px solid var(--color-secondary);
+  border: 2px solid var(--color-text);
   border-radius: var(--border-radius);
 }
 
 .cta-input::placeholder {
-  color: var(--color-secondary);
+  color: var(--color-text);
   opacity: 0.6;
 }
 
