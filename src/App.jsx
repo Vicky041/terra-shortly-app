@@ -7,8 +7,6 @@ import AdvanceStatistics from "./ui/AdvanceStatistics";
 
 function App() {
   return (
-    
-      
     <>
       <Header/>
       <Hero />
@@ -18,7 +16,6 @@ function App() {
       <AdvanceStatistics />
       <Footer />
     </>
-   
   );
 }
 
