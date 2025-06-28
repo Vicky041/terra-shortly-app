@@ -34,32 +34,44 @@ const CallToAction = () => {
       );
     } else {
       setShortenedLink(data.result_url);
+      setLink("")
     }
   };
 
   return (
-    <section className="container">
-      <div className="cta">
-        <div className="cta-input-container">
-          <div className="cta-input-wrapper">
-            <div>
-              <input
-                type="text"
-                placeholder="Shorten a link here..."
-                className="cta-input"
-                value={state.link}
-                onChange={(e) => setLink(e.target.value)}
+    <section className="cta-container">
+      <div className="container">
+        <div className="cta">
+          <div className="cta-input-container">
+            <div className="cta-input-wrapper">
+              <div>
+                <input
+                  type="text"
+                  placeholder="Shorten a link here..."
+                  className={`cta-input ${state.error ? "error" : ""}`}
+                  value={state.link}
+                  onChange={(e) => {
+                    setLink(e.target.value);
+                    if (state.error) setError(null);
+                  }}
+                  aria-invalid={!!state.error}
+                  aria-describedby={state.error ? "cta-error-msg" : undefined}
+                />
+                {state.error && (
+                  <p className="cta-error" id="cta-error-msg">
+                    {state.error}
+                  </p>
+                )}
+              </div>
+              <Button
+                label="Shorten it!"
+                variant="primary"
+                onClick={() => handleShorten(state.link)}
               />
-              {state.error && <p className="cta-error">{state.error}</p>}
             </div>
-            <Button
-              label="Shorten it!"
-              variant="primary"
-              onClick={() => handleShorten(state.link)}
-            />
           </div>
+          <CallToActionLinks links={state.history} />
         </div>
-        <CallToActionLinks links={state.history} />
       </div>
     </section>
   );

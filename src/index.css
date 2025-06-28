@@ -70,20 +70,30 @@ a {
 
 /* CALL-TO-ACTION SECTION */
 
+.cta-container {
+  background-color: #f0f1f6;
+}
+
 .cta {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-medium);
+  position: relative;
+  padding-block: 80px;
 }
 
 .cta-input-container {
   background-color: var(--color-primary);
-  background-image: url("src/assets/images/bg-shorten-desktop.svg");
+  background-image: url("/src/assets/images/bg-shorten-desktop.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   padding: var(--spacing-xlarge) var(--spacing-xxlarge);
   border-radius: var(--border-radius);
+
+  position: absolute;
+  width: 100%;
+  top: -50px;
 }
 
 .cta-input-wrapper {
@@ -96,10 +106,14 @@ a {
   flex: 1;
 }
 
-
 @media screen and (max-width: 768px) {
+  .cta {
+    padding-block: 110px;
+  }
+
   .cta-input-container {
     padding: var(--spacing-large);
+    top: -70px;
   }
 
   .cta-input-wrapper {
@@ -121,11 +135,30 @@ a {
   padding: var(--spacing-small) var(--spacing-medium);
   border: 2px solid var(--color-text);
   border-radius: var(--border-radius);
+  outline: none;
+}
+
+.cta-input.error:focus {
+  outline: none;
 }
 
 .cta-input::placeholder {
   color: var(--color-text);
   opacity: 0.6;
+}
+
+.cta-input.error {
+  border-color: var(--color-secondary);
+  color: var(--color-secondary);
+}
+
+.cta-input.error:focus {
+  outline: none;
+  border-color: var(--color-secondary);
+}
+
+.cta-input.error::placeholder {
+  color: var(--color-secondary);
 }
 
 .cta-error {
@@ -145,6 +178,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: var(--spacing-large);
   height: 30vh;
   width: 100vw;
   color: var(--color-white);
@@ -165,14 +199,16 @@ footer {
   background-color: var(--color-text);
   color: var(--color-white);
   font-size: var(--font-size-small);
+  padding: 50px 0;
 }
 
 .footer-container .img-container {
   width: 30vw;
 }
 
-.footer-container .img-container img {
-  padding-left: 10px;
+.footer-container .footer-logo {
+  fill: var(--color-white);
+  stroke: var(--color-white);
 }
 
 .footer-container .middle-links {
