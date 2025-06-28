@@ -18,7 +18,7 @@ export default function Hero() {
         <div className="hero-section">
           <img
             className="hero-image"
-            src="../assets/images/illustration-working.svg"
+            src="/assets/illustration-working.svg"
             alt="images"
           />
         </div>
