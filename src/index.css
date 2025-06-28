@@ -150,12 +150,12 @@ a {
   color: var(--color-white);
   font-size: var(--font-size-large);
 }
-
+/* 
 footer {
   position: fixed;
   bottom: 0;
   width: 100vw;
-}
+} */
 
 .footer-container {
   display: flex;
