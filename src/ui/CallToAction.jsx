@@ -1,5 +1,5 @@
 import Button from "../components/Button";
-import CallToActionLinks from "../components/CallToACtionLinks";
+import CallToActionLinks from "../components/CallToActionLinks";
 import useFetch from "../hooks/useFetch";
 import { useShorten } from "../hooks/useShorten";
 
