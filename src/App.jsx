@@ -1,3 +1,5 @@
+import Header from "./components/Header";
+import './styles/header.scss';
 import Footer from "./components/Footer";
 import CallToAction from "./ui/CallToAction";
 import ShortenProvider from "./contexts/ShortenContext";
@@ -5,13 +7,17 @@ import Hero from "./components/hero";
 
 function App() {
   return (
+    
+      
     <>
+      <Header/>
       <Hero />
       <ShortenProvider>
         <CallToAction />
       </ShortenProvider>
       <Footer />
     </>
+   
   );
 }
 
