@@ -6,7 +6,7 @@ function Footer() {
     <Boost />
     <div className='footer-container'>
         <div className='img-container'>
-            <img src="src/assets/images/logo.svg" alt="Logo" className='footer-logo' />
+            <img src="../assets/images/logo.svg" alt="Logo" className='footer-logo' />
         </div>
         <div class="middle-links">
             <ul class="features">
