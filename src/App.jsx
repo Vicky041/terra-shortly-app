@@ -3,6 +3,7 @@ import Footer from "./components/Footer";
 import CallToAction from "./ui/CallToAction";
 import ShortenProvider from "./contexts/ShortenContext";
 import Hero from "./components/hero";
+import AdvanceStatistics from "./ui/AdvanceStatistics";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <ShortenProvider>
         <CallToAction />
       </ShortenProvider>
+      <AdvanceStatistics />
       <Footer />
     </>
    
