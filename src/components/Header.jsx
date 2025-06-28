@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Button from './Button'
 import { AiOutlineCloseSquare } from 'react-icons/ai'
 import { GiHamburgerMenu } from "react-icons/gi";
+import '../styles/header.scss';
 
 
 const Header = () => {
