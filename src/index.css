@@ -152,7 +152,7 @@ a {
 }
 /* 
 footer {
-  position: fixed;
+  position: relative;
   bottom: 0;
   width: 100vw;
 } */
@@ -202,7 +202,7 @@ footer {
   cursor: pointer;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 768px) {
   .footer-container {
     display: flex;
     flex-direction: column;
